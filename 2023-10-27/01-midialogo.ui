@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>352</width>
-    <height>137</height>
+    <height>172</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -41,6 +41,23 @@
       </widget>
      </item>
     </layout>
+   </item>
+   <item>
+    <widget class="QRadioButton" name="opcion1">
+     <property name="text">
+      <string>Opcion 1</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QRadioButton" name="opcion2">
+     <property name="text">
+      <string>Opcion 2</string>
+     </property>
+    </widget>
    </item>
    <item>
     <widget class="QDialogButtonBox" name="buttonBox">

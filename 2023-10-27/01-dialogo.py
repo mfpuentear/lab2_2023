@@ -19,6 +19,18 @@ class MiDialogo(QDialog):
     apellido = self.apellido.text()
     nombre = self.nombre.text()
     return Persona(apellido, nombre)
+  
+  def getOpcion1(self):
+    return self.opcion1.isChecked()
+
+  def getOpcion2(self):
+    return self.opcion2.isChecked()
+  
+  def getOpcion(self):
+    if self.opcion1.isChecked():
+      return 'opcion 1'
+    else:
+      return 'opcion 2'
 
 
 class MiVentana(QMainWindow):
@@ -40,6 +52,9 @@ class MiVentana(QMainWindow):
     if (dialogo.exec()):
       persona = dialogo.getPersona()
       self.personas.append(persona)
+      print('opcion1:', dialogo.getOpcion1())
+      print('opcion2:', dialogo.getOpcion2())
+      print('opcion :', dialogo.getOpcion())
 
 
 app = QApplication([])
